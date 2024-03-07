@@ -6,10 +6,12 @@ for(let i = 0; i < colors.length; i++ ){
 
     colors[i].style.animationDelay = i/10 + "s"
 
-    let randomHue = Math.floor(Math.random() * (360 - 1) + 1);
-    let randomSaturation = Math.floor(Math.random() * (79 - 11) + 11 + "%");
-    let randomLightness = Math.floor(Math.random() * (100 - 11) + 11 + "%");
 
+    let randomHue = Math.floor(Math.random() * (360 - 1) + 1);
+    let randomSaturation = Math.floor(Math.random() * (79 - 11) + 11) + "%";
+    let randomLightness = Math.floor(Math.random() * (100 - 11) + 11) + "%";
+
+    console.log(randomHue, randomLightness, randomSaturation)
 
 
     colors[i].children[0].style.background = `hsl(${randomHue} ${randomSaturation} ${randomLightness})`;

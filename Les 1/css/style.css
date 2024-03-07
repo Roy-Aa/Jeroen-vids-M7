@@ -389,7 +389,7 @@ body {
   display: none;
 }
 
-.colors__color--selected + .colors__text {
+.colors__circle--selected + .colors__text {
   display: block;
 }
 
